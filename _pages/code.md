@@ -4,5 +4,5 @@ title: "Code"
 permalink: /code/
 author_profile: true
 redirect_from:
-  - /resume
+  - /code
 ---
