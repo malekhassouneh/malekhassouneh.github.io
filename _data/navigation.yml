@@ -22,7 +22,7 @@ main:
     url: /research/
 
   - title: "Code"
-    url: /cv/
+    url: /code/
     
   # - title: "Guide"
   #   url: /markdown/
