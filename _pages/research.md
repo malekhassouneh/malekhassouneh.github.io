@@ -5,4 +5,8 @@ permalink: /research/
 author_profile: true
 ---
 
-TESTING TEXT
+<!-- Published
+------ -->
+
+Working Papers
+------
