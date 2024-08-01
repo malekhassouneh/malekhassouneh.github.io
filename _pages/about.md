@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a Pre-doctoral Research Assistant at the University of Toronto and a member of the [<span style = "color: black">Social Science Prediction Platform (SSPP)</span>](https://socialscienceprediction.org/) team, working directly under Professors Eva Vivalt and Stefano DellaVigna. 
+Welcome! I am a Pre-doctoral Research Assistant at the University of Toronto and a member of the <span style = "color: black">[Social Science Prediction Platform (SSPP)](https://socialscienceprediction.org/)</span> team, working directly under Professors Eva Vivalt and Stefano DellaVigna. 
 
 My research interests include microeconometrics, labor, and public economics, with a specific interest in studying the migration determinants of labor and patterns of income inequality. 
 
