@@ -16,13 +16,13 @@
   /* sticky footer fix end */
   margin-top: auto;
   margin-bottom: auto;
-  color: mix(#fff, $gray, 25%);
+  color: mix(#fff, $black, 25%);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background-color: $lighter-gray;
-  border-top: 1px solid $light-gray;
+  background-color: ;
+  border-top: 1px solid ;
 
   footer {
     @include clearfix;
@@ -51,7 +51,7 @@
   .fab,
   .far,
   .fal {
-    color: mix(#fff, $gray, 25%);
+    color: mix(#fff, $black, 25%);
   }
 }
 
