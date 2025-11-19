@@ -442,3 +442,9 @@
     }
   }
 }
+
+/* Right-align the greedy nav items */
+.greedy-nav .visible-links {
+  display: table;
+  margin-left: auto;       // pushes all table cells to the right
+}
