@@ -1,3 +1,7 @@
+.masthead .site-nav-wrap {
+    justify-content: flex-end !important; /* pushes nav to the right */
+}
+
 .masthead .site-nav {
-    margin-left: auto !important;
+    margin-left: 0 !important; /* reset any auto margin */
 }
