@@ -1,5 +1,5 @@
-/* ==========================================================================  
-   FOOTER  
+/* ==========================================================================
+   FOOTER
    ========================================================================== */
 
 .page__footer {
@@ -13,12 +13,13 @@
   width: 100%;
   clear: both;
 
-  /* sticky footer fix */
-  position: relative;   // keep relative so footer height adjusts naturally
-  bottom: auto;
+  /* sticky footer fix start */
+  position: absolute;
+  bottom: 0em;
   height: auto;
+  /* sticky footer fix end */
 
-  margin-top: 2em;      // slightly reduced from 3em
+  margin-top: 2em; // 3em;
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -30,9 +31,9 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.5em;   // reduce vertical padding
+    margin-top: 1em;
     max-width: 100%;
-    padding: 0 1em 0.5em; // reduce bottom padding slightly
+    padding: 0 1em 1em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -56,7 +57,41 @@
   }
 }
 
-/* Hide extra sections: Sitemap / Follow / Feed */
+.page__footer-copyright {
+  font-family: $global-font-family;
+  font-size: $type-size-7;
+}
+
 .page__footer-follow {
   display: none !important;
+  // ul {
+  //   margin: 0;
+  //   padding: 0;
+  //   list-style-type: none;
+  // }
+
+  // li {
+  //   display: inline-block;
+  //   padding-top: 5px;
+  //   padding-bottom: 5px;
+  //   font-family: $sans-serif-narrow;
+  //   font-size: $type-size-6;
+  //   text-transform: uppercase;
+  // }
+
+  // li + li:before {
+  //   content: "";
+  //   padding-right: 5px;
+  // }
+
+  // a {
+  //   padding-right: 10px;
+  //   font-weight: bold;
+  // }
+
+  // .social-icons {
+  //   a {
+  //     white-space: nowrap;
+  //   }
+  // }
 }
