@@ -13,13 +13,12 @@
   width: 100%;
   clear: both;
 
-  /* sticky footer fix start */
-  position: relative;   // use relative so height adjusts dynamically
+  /* sticky footer fix */
+  position: relative;   // keep relative so footer height adjusts naturally
   bottom: auto;
   height: auto;
-  /* sticky footer fix end */
 
-  margin-top: 3em;
+  margin-top: 2em;      // slightly reduced from 3em
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -31,17 +30,13 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 0.5em;   // reduce vertical padding
     max-width: 100%;
-    padding: 1em;   // padding adjusts height dynamically
+    padding: 0 1em 0.5em; // reduce bottom padding slightly
 
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
-
-    text-align: center;  // center content
-    font-family: $global-font-family;
-    font-size: $type-size-7;
   }
 
   a {
@@ -61,15 +56,7 @@
   }
 }
 
-/* Remove extra social/follow sections */
+/* Hide extra sections: Sitemap / Follow / Feed */
 .page__footer-follow {
   display: none !important;
-}
-
-/* Only show copyright + last updated */
-.page__footer-copyright {
-  font-family: $global-font-family;
-  font-size: $type-size-7;
-  display: block;
-  margin-top: 0.5em;
 }
