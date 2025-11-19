@@ -33,9 +33,8 @@ main:
   #   url: /markdown/
 
   - title: "Curriculum Vitae"
-    url: "/files/curriculumvitae_hassouneh.pdf"
+    url: "{{ site.url }}{{ site.baseurl }}/files/curriculumvitae_hassouneh.pdf"
     target: "_blank"
-    type: external
 
   - title: "Research"
     url: /research/
