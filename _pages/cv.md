@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+<embed src = "/files/curriculumvitae_hassouneh.pdf" width = "600" height = "700" type = "application/pdf">
+
 <!-- {% include base_path %}
 
 Education
