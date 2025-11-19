@@ -1,7 +1,11 @@
 .masthead .site-nav-wrap {
-    justify-content: flex-end !important; /* pushes nav to the right */
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;
 }
 
 .masthead .site-nav {
-    margin-left: 0 !important; /* reset any auto margin */
+    display: flex;                 /* ensure nav items are in a row */
+    justify-content: flex-end;     /* push items to the right inside nav */
+    flex: 1;                       /* take remaining space */
 }
