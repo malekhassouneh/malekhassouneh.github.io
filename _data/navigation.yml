@@ -39,8 +39,14 @@ main:
   - title: "Research"
     url: /research/
 
+  - title: "Projects"
+    url: /projects/
+
   - title: "Code"
     url: /code/
 
   - title: "Reading List"
     url: /reading-list/
+
+  - title: "Miscellaneous"
+    url: /miscellaneous/
