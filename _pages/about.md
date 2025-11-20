@@ -9,15 +9,17 @@ redirect_from:
 
 Hello! This is a personal webpage where I (attempt to) document some interesting projects that I'm working on.
 
+I spend most of my time reading cool papers in econometric theory, but I'm also interested in many of the subtopics of labor and public economics (migration, tax competition, inequality, etc.) and pretty much anything with a spatial dimension.
+
 I most recently was a pre-doctoral fellow at the Department of Economics, University of Toronto, and a member of the <span style = "color: black">[Social Science Prediction Platform (SSPP)](https://socialscienceprediction.org/)</span> team, working directly under Professors Eva Vivalt and Stefano DellaVigna.
 
 I graduated with a Master of Arts in Economics from the University of Toronto ('23), and a Bachelor of Arts in Economics (Honours) from McGill University ('22).
 
-<!-- Welcome
+<!-- 
 
-My research interests include microeconometrics, labor, and public economics, with a focus on the determinants of labor mobility and migration, and patterns of income inequality. 
+Most of my time is spent reading cool papers in econometric theory, but I also take a keen interest in the determinants and patterns of migration and inequality and the many other topics of labor and public economics.
 
-I graduated with a Master of Arts in Economics from the University of Toronto ('23), and a Bachelor of Arts in Economics from McGill University ('22).  -->
+My research interests include microeconometrics, labor, and public economics, with a focus on the determinants of labor mobility and migration, and patterns of income inequality. -->
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
