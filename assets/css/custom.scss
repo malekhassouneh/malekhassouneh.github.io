@@ -1,10 +1,10 @@
-/* ==========================================================================
-   Custom site overrides
-   ========================================================================== */
+/* ========================================================================== */
+/* Custom site overrides                                                      */
+/* ========================================================================== */
 
-/* ================================
-   Nav: left-aligned name, right-aligned links
-   ================================ */
+/* ================================ */
+/* Nav: left-aligned name, right-aligned links */
+/* ================================ */
 
 /* Desktop layout */
 @media (min-width: 768px) {
@@ -14,52 +14,43 @@
     align-items: center;
   }
 
-  /* Visible links container */
+  /* Visible links container: flex horizontally */
   .greedy-nav .visible-links {
     display: flex !important;
-    flex-wrap: nowrap;
-    align-items: center;
+    gap: 1rem; /* spacing between links */
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  /* First item (your name) stays left */
+  /* First item (name) stays left */
   .greedy-nav .visible-links li:first-child {
     margin-left: 0 !important;
     font-weight: bold;
   }
 
-  /* Other items right-aligned */
+  /* Other items flush right */
   .greedy-nav .visible-links li:not(:first-child) {
-    margin-left: 1rem; /* spacing between links */
+    margin-left: auto;
   }
 
-  /* Force hidden-links visible on desktop */
+  /* Force hidden-links to behave normally (only appear in mobile) */
   .greedy-nav .hidden-links {
-    display: flex !important;
-    position: static !important;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-shadow: none;
-  }
-
-  .greedy-nav .hidden-links li {
-    display: block;
-    margin-left: 1rem;
-    border: none;
+    display: none !important;
   }
 }
 
-/* Mobile fallback: keep default Primer behavior */
+/* Mobile fallback: default Primer behavior */
 @media (max-width: 767px) {
+  .greedy-nav .visible-links,
   .greedy-nav .hidden-links {
-    display: none !important; /* handled by JS */
+    display: block !important;
   }
 }
 
-/* ================================
-   Footer: hide Sitemap / Follow
-   ================================ */
+/* ================================ */
+/* Footer: hide Sitemap / Follow */
+/* ================================ */
 footer .sitemap,
 footer .follow {
   display: none !important;
