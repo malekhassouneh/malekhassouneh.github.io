@@ -1,17 +1,45 @@
 /* ================================
-   Nav: left-aligned name, right-aligned links (Primer theme)
+   Nav: Name left, links right
    ================================ */
 
-/* Keep table layout but push all except first to right */
-.greedy-nav .visible-links {
-  display: table;          /* keep table layout for greedy nav JS */
-  width: 100%;
+/* Desktop only: keep flex horizontal */
+@media (min-width: 768px) {   // adjust breakpoint if needed
+  .greedy-nav .visible-links {
+    display: flex !important;         // force flex on desktop
+    justify-content: space-between;   // name left, rest right
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Make name left-aligned */
+  .greedy-nav .visible-links li:first-child {
+    margin-left: 0 !important;
+    order: 0;  // first item stays left
+  }
+
+  /* Push all other items to the right */
+  .greedy-nav .visible-links li:not(:first-child) {
+    margin-left: auto; 
+    order: 1;  // keeps them after name
+  }
+
+  /* Remove any float Primer JS might have applied */
+  .greedy-nav .visible-links li {
+    float: none !important;
+  }
 }
 
-.greedy-nav .visible-links li:first-child {
-  float: left;             /* your name stays left */
+/* Mobile: fallback to Primer JS (hamburger) */
+@media (max-width: 767px) {
+  .greedy-nav .visible-links {
+    display: block !important;  // allow greedy nav to collapse
+  }
 }
 
-.greedy-nav .visible-links li:not(:first-child) {
-  float: right;            /* everything else flush right */
+/* ================================
+   Footer: hide Sitemap / Follow
+   ================================ */
+footer .sitemap,
+footer .follow {
+  display: none !important;
 }
