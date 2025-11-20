@@ -1,38 +1,26 @@
 /* ========================================================================== */
-/* CUSTOM SITE OVERRIDES */
-/* ========================================================================== */
-
-/* ================================ */
 /* Nav: left-aligned name, right-aligned links, fully flexible */
-/* ================================ */
+/* ========================================================================== */
 
 .greedy-nav {
   display: flex !important;
   justify-content: space-between; /* name left, everything else right */
   align-items: center;
-  flex-wrap: wrap; /* ensures mobile wraps if needed */
+  flex-wrap: wrap;
 }
 
-/* Container for visible links */
-.greedy-nav .visible-links {
-  display: flex !important;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-left: auto; /* pushes all visible links to the right */
-}
-
-/* First item (name) stays left */
+/* First item (your name) stays left */
 .greedy-nav .visible-links li:first-child {
   margin-left: 0 !important;
   font-weight: bold;
 }
 
-/* Remaining items maintain horizontal spacing */
+/* Wrap all other items in a container to push right */
 .greedy-nav .visible-links li:not(:first-child) {
   margin-left: 1rem;
 }
 
-/* Make hidden-links visible on large screens, inline */
+/* Force hidden-links visible on desktop */
 @media (min-width: 768px) {
   .greedy-nav .hidden-links {
     display: flex !important;
@@ -67,9 +55,7 @@
   }
 }
 
-/* ================================ */
 /* Footer: hide Sitemap / Follow */
-/* ================================ */
 footer .sitemap,
 footer .follow {
   display: none !important;
