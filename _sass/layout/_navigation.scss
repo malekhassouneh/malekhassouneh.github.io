@@ -443,22 +443,20 @@
   }
 }
 
-/* Keep the first nav item left-aligned [MH] */
-.greedy-nav .visible-links li:first-child {
-  margin-left: 0 !important;
-}
-
-/* Push all other nav items to the right */
+/* Keep the original table layout [MH] */
 .greedy-nav .visible-links {
-  display: flex;
+  display: table;
+  width: 100%;     /* fill the nav bar */
 }
 
+/* First item stays left */
+.greedy-nav .visible-links li:first-child {
+  text-align: left;
+}
+
+/* Make all other items right-aligned */
 .greedy-nav .visible-links li:not(:first-child) {
-  margin-left: auto;
+  text-align: right;
+  width: 1%;       /* critical: collapses cells so they sit on the right */
+  white-space: nowrap;
 }
-
-// /* Right-align the greedy nav items */
-// .greedy-nav .visible-links {
-//   display: table;
-//   margin-left: auto;       // pushes all table cells to the right
-// }
