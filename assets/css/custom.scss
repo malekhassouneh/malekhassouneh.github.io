@@ -1,38 +1,59 @@
+/* ==========================================================================
+   Custom site overrides
+   ========================================================================== */
+
 /* ================================
-   Nav: Name left, links right
+   Nav: left-aligned name, right-aligned links
    ================================ */
 
-/* Desktop only: keep flex horizontal */
-@media (min-width: 768px) {   // adjust breakpoint if needed
-  .greedy-nav .visible-links {
-    display: flex !important;         // force flex on desktop
-    justify-content: space-between;   // name left, rest right
+/* Desktop layout */
+@media (min-width: 768px) {
+  .greedy-nav {
+    display: flex !important;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
   }
 
-  /* Make name left-aligned */
+  /* Visible links container */
+  .greedy-nav .visible-links {
+    display: flex !important;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  /* First item (your name) stays left */
   .greedy-nav .visible-links li:first-child {
     margin-left: 0 !important;
-    order: 0;  // first item stays left
+    font-weight: bold;
   }
 
-  /* Push all other items to the right */
+  /* Other items right-aligned */
   .greedy-nav .visible-links li:not(:first-child) {
-    margin-left: auto; 
-    order: 1;  // keeps them after name
+    margin-left: 1rem; /* spacing between links */
   }
 
-  /* Remove any float Primer JS might have applied */
-  .greedy-nav .visible-links li {
-    float: none !important;
+  /* Force hidden-links visible on desktop */
+  .greedy-nav .hidden-links {
+    display: flex !important;
+    position: static !important;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .greedy-nav .hidden-links li {
+    display: block;
+    margin-left: 1rem;
+    border: none;
   }
 }
 
-/* Mobile: fallback to Primer JS (hamburger) */
+/* Mobile fallback: keep default Primer behavior */
 @media (max-width: 767px) {
-  .greedy-nav .visible-links {
-    display: block !important;  // allow greedy nav to collapse
+  .greedy-nav .hidden-links {
+    display: none !important; /* handled by JS */
   }
 }
 
