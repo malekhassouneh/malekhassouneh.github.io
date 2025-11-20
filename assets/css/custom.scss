@@ -1,25 +1,38 @@
 /* ================================
-   Nav: left-aligned name, right-aligned links
+   Responsive nav: name left, items right
    ================================ */
 
-.greedy-nav .visible-links {
+.Header-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between; // name left, items right
+  padding: 0.5rem 1rem;
+  flex-wrap: nowrap;              // prevent breaking on desktop
 }
 
-.greedy-nav .visible-links li:first-child {
-  margin-right: auto;  // your name stays left
+.Header-navBrand {
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
-.greedy-nav .visible-links li:not(:first-child) {
-  margin-left: 1em;   // spacing between other buttons
+.Header-navItems {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1rem;                      // spacing between items
+  flex-wrap: nowrap;               // keep horizontal on desktop
 }
 
-/* ================================
-   Footer: hide Sitemap / Follow
-   ================================ */
-
-.page__footer-follow,
-.page__footer .sitemap {
-  display: none !important;
+/* Make nav collapse only on small screens (mobile) */
+@media (max-width: 600px) {
+  .Header-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Header-navItems {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
 }
