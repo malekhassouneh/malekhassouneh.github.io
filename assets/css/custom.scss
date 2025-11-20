@@ -1,16 +1,25 @@
-.navbar-brand {
-  margin-right: auto;
-}
+/* ================================
+   Nav: left-aligned name, right-aligned links
+   ================================ */
 
-nav#navbar-main > .container {
+.greedy-nav .visible-links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.navbar-nav {
-  margin-left: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+.greedy-nav .visible-links li:first-child {
+  margin-right: auto;  // your name stays left
+}
+
+.greedy-nav .visible-links li:not(:first-child) {
+  margin-left: 1em;   // spacing between other buttons
+}
+
+/* ================================
+   Footer: hide Sitemap / Follow
+   ================================ */
+
+.page__footer-follow,
+.page__footer .sitemap {
+  display: none !important;
 }
