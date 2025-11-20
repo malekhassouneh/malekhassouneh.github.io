@@ -16,6 +16,8 @@
   /* sticky footer fix start */
   // position: absolute;
   // bottom: 0em;
+  position: static !important;
+  bottom: auto !important;
   height: auto;
   /* sticky footer fix end */
 
