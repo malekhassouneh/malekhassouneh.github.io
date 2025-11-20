@@ -443,10 +443,19 @@
   }
 }
 
-/* Keep the original table layout [MH] */
+/* Disable GreedyNav collapsing */
+.greedy-nav .hidden-links {
+  display: none !important;
+}
+
+.greedy-nav button {
+  display: none !important;  /* hide the "more" button */
+}
+
+/* Always show all nav items on one line */
 .greedy-nav .visible-links {
-  display: table;
-  width: 100%;     /* fill the nav bar */
+  display: table !important;
+  width: 100% !important;
 }
 
 /* First item stays left */
@@ -454,9 +463,9 @@
   text-align: left;
 }
 
-/* Make all other items right-aligned */
+/* All other items right-aligned */
 .greedy-nav .visible-links li:not(:first-child) {
   text-align: right;
-  width: 1%;       /* critical: collapses cells so they sit on the right */
+  width: 1%;
   white-space: nowrap;
 }
