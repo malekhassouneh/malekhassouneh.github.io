@@ -1,14 +1,22 @@
-/* ================================
-   Nav: left-aligned name, right-aligned links
-   ================================ */
+/* ========================================================================== */
+/* CUSTOM SITE OVERRIDES */
+/* ========================================================================== */
 
+/* ================================ */
+/* Nav: left-aligned name, right-aligned links, responsive */
+/* ================================ */
+
+/* Desktop layout (>=768px) */
 @media (min-width: 768px) {
+
+  /* Main nav container */
   .greedy-nav {
     display: flex !important;
-    justify-content: space-between; /* ensures first left, rest right */
+    justify-content: space-between;
     align-items: center;
   }
 
+  /* Visible links container */
   .greedy-nav .visible-links {
     display: flex !important;
     flex-wrap: nowrap;
@@ -16,23 +24,23 @@
     width: 100%;
   }
 
-  /* First item (your name) stays left */
+  /* First item (name) stays left */
   .greedy-nav .visible-links li:first-child {
     margin-left: 0 !important;
     font-weight: bold;
   }
 
-  /* Push everything else to the right */
+  /* Push all other items to the right */
   .greedy-nav .visible-links li:first-child + li {
-    margin-left: auto; /* everything after first flushes right */
+    margin-left: auto;
   }
 
-  /* Keep spacing between right items */
+  /* Spacing between right-aligned items */
   .greedy-nav .visible-links li:not(:first-child) + li {
     margin-left: 1rem;
   }
 
-  /* Force hidden-links visible on desktop */
+  /* Include any hidden-links items inline to avoid hamburger */
   .greedy-nav .hidden-links {
     display: flex !important;
     position: static !important;
@@ -48,11 +56,30 @@
     margin-left: 1rem;
     border: none;
   }
+
+  /* Hide hamburger button on desktop */
+  .greedy-nav button {
+    display: none !important;
+  }
 }
 
-/* Mobile fallback */
+/* Mobile layout (<768px) */
 @media (max-width: 767px) {
+  /* Hidden links handled by JS (default Primer) */
   .greedy-nav .hidden-links {
     display: none !important;
   }
+
+  /* Show hamburger button */
+  .greedy-nav button {
+    display: block !important;
+  }
+}
+
+/* ================================ */
+/* Footer: hide Sitemap / Follow */
+/* ================================ */
+footer .sitemap,
+footer .follow {
+  display: none !important;
 }
