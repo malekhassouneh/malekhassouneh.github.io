@@ -11,7 +11,7 @@ Hello! This is a personal webpage where I (attempt to) document some interesting
 
 I spend most of my time reading cool papers in econometric theory, but I'm also interested in many of the subtopics of labor and public economics (migration, tax competition, inequality, etc.) and pretty much anything with a spatial dimension.
 
-I most recently was a pre-doctoral fellow at the Department of Economics, University of Toronto, and a member of the <span style = "color: black">[Social Science Prediction Platform (SSPP)](https://socialscienceprediction.org/)</span> team, working directly under Professors Eva Vivalt and Stefano DellaVigna.
+I most recently was a pre-doctoral fellow at the Department of Economics, University of Toronto, and a member of the <span style = "color: black">[Social Science Prediction Platform (SSPP)](https://socialscienceprediction.org/)</span> team, working directly with Professors Eva Vivalt and Stefano DellaVigna.
 
 I graduated with a Master of Arts in Economics from the University of Toronto ('23), and a Bachelor of Arts in Economics (Honours) from McGill University ('22).
 
