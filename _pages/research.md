@@ -10,6 +10,7 @@ author_profile: true
 
 Research Assistance
 ------
+Here are research projects that I had the privilege of working on:
 
 - <span style = "color: black">[Using Multiple Outcomes to Adjust Standard Errors for Spatial Correlation](https://www.nber.org/papers/w33716)</span>  (DellaVigna et al., 2025)
 
@@ -21,4 +22,4 @@ Research Assistance
 
 Working Papers
 ------
-\*crickets\* Come back later!
+*Crickets chirping. Tumbleweed rolls by* ... come back later!
