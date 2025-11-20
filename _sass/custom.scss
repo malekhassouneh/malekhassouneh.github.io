@@ -1,57 +1,58 @@
-/* ========================================================================== */
-/* Custom site overrides                                                      */
-/* ========================================================================== */
+/* ================================
+   Nav: left-aligned name, right-aligned links
+   ================================ */
 
-/* ================================ */
-/* Nav: left-aligned name, right-aligned links */
-/* ================================ */
-
-/* Desktop layout */
 @media (min-width: 768px) {
   .greedy-nav {
     display: flex !important;
-    justify-content: space-between;
+    justify-content: space-between; /* ensures first left, rest right */
     align-items: center;
   }
 
-  /* Visible links container: flex horizontally */
   .greedy-nav .visible-links {
     display: flex !important;
-    gap: 1rem; /* spacing between links */
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
   }
 
-  /* First item (name) stays left */
+  /* First item (your name) stays left */
   .greedy-nav .visible-links li:first-child {
     margin-left: 0 !important;
     font-weight: bold;
   }
 
-  /* Other items flush right */
-  .greedy-nav .visible-links li:not(:first-child) {
-    margin-left: auto;
+  /* Push everything else to the right */
+  .greedy-nav .visible-links li:first-child + li {
+    margin-left: auto; /* everything after first flushes right */
   }
 
-  /* Force hidden-links to behave normally (only appear in mobile) */
+  /* Keep spacing between right items */
+  .greedy-nav .visible-links li:not(:first-child) + li {
+    margin-left: 1rem;
+  }
+
+  /* Force hidden-links visible on desktop */
+  .greedy-nav .hidden-links {
+    display: flex !important;
+    position: static !important;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .greedy-nav .hidden-links li {
+    display: block;
+    margin-left: 1rem;
+    border: none;
+  }
+}
+
+/* Mobile fallback */
+@media (max-width: 767px) {
   .greedy-nav .hidden-links {
     display: none !important;
   }
-}
-
-/* Mobile fallback: default Primer behavior */
-@media (max-width: 767px) {
-  .greedy-nav .visible-links,
-  .greedy-nav .hidden-links {
-    display: block !important;
-  }
-}
-
-/* ================================ */
-/* Footer: hide Sitemap / Follow */
-/* ================================ */
-footer .sitemap,
-footer .follow {
-  display: none !important;
 }
