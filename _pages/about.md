@@ -7,7 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-<!-- Welcome! I am a pre-doctoral research assistant at the Department of Economics, University of Toronto and a member of the <span style = "color: black">[Social Science Prediction Platform (SSPP)](https://socialscienceprediction.org/)</span> team, working directly under Professors Eva Vivalt and Stefano DellaVigna. 
+Hello! This is a personal webpage where I (attempt to) document some interesting projects that I'm working on.
+
+I most recently was a pre-doctoral fellow at the Department of Economics, University of Toronto, and a member of the <span style = "color: black">[Social Science Prediction Platform (SSPP)](https://socialscienceprediction.org/)</span> team, working directly under Professors Eva Vivalt and Stefano DellaVigna.
+
+I graduated with a Master of Arts in Economics from the University of Toronto ('23), and a Bachelor of Arts in Economics (Honours) from McGill University ('22).
+
+<!-- Welcome
 
 My research interests include microeconometrics, labor, and public economics, with a focus on the determinants of labor mobility and migration, and patterns of income inequality. 
 
