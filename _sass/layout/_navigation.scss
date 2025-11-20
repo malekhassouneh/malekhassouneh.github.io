@@ -443,8 +443,22 @@
   }
 }
 
-/* Right-align the greedy nav items */
-.greedy-nav .visible-links {
-  display: table;
-  margin-left: auto;       // pushes all table cells to the right
+/* Keep the first nav item left-aligned [MH] */
+.greedy-nav .visible-links li:first-child {
+  margin-left: 0 !important;
 }
+
+/* Push all other nav items to the right */
+.greedy-nav .visible-links {
+  display: flex;
+}
+
+.greedy-nav .visible-links li:not(:first-child) {
+  margin-left: auto;
+}
+
+// /* Right-align the greedy nav items */
+// .greedy-nav .visible-links {
+//   display: table;
+//   margin-left: auto;       // pushes all table cells to the right
+// }
