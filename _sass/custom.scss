@@ -3,48 +3,41 @@
 /* ========================================================================== */
 
 /* ================================ */
-/* Nav: left-aligned name, right-aligned links, responsive */
+/* Nav: left-aligned name, right-aligned links, fully flexible */
 /* ================================ */
 
-/* Desktop layout (>=768px) */
+.greedy-nav {
+  display: flex !important;
+  justify-content: space-between; /* name left, everything else right */
+  align-items: center;
+  flex-wrap: wrap; /* ensures mobile wraps if needed */
+}
+
+/* Container for visible links */
+.greedy-nav .visible-links {
+  display: flex !important;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: auto; /* pushes all visible links to the right */
+}
+
+/* First item (name) stays left */
+.greedy-nav .visible-links li:first-child {
+  margin-left: 0 !important;
+  font-weight: bold;
+}
+
+/* Remaining items maintain horizontal spacing */
+.greedy-nav .visible-links li:not(:first-child) {
+  margin-left: 1rem;
+}
+
+/* Make hidden-links visible on large screens, inline */
 @media (min-width: 768px) {
-
-  /* Main nav container */
-  .greedy-nav {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* Visible links container */
-  .greedy-nav .visible-links {
-    display: flex !important;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 100%;
-  }
-
-  /* First item (name) stays left */
-  .greedy-nav .visible-links li:first-child {
-    margin-left: 0 !important;
-    font-weight: bold;
-  }
-
-  /* Push all other items to the right */
-  .greedy-nav .visible-links li:first-child + li {
-    margin-left: auto;
-  }
-
-  /* Spacing between right-aligned items */
-  .greedy-nav .visible-links li:not(:first-child) + li {
-    margin-left: 1rem;
-  }
-
-  /* Include any hidden-links items inline to avoid hamburger */
   .greedy-nav .hidden-links {
     display: flex !important;
-    position: static !important;
     flex-direction: row;
+    position: static !important;
     margin: 0;
     padding: 0;
     border: none;
@@ -57,20 +50,18 @@
     border: none;
   }
 
-  /* Hide hamburger button on desktop */
+  /* Hide hamburger on large screens */
   .greedy-nav button {
     display: none !important;
   }
 }
 
-/* Mobile layout (<768px) */
+/* Mobile fallback */
 @media (max-width: 767px) {
-  /* Hidden links handled by JS (default Primer) */
   .greedy-nav .hidden-links {
     display: none !important;
   }
 
-  /* Show hamburger button */
   .greedy-nav button {
     display: block !important;
   }
