@@ -2,36 +2,16 @@
    Nav: left-aligned name, right-aligned links (Primer theme)
    ================================ */
 
-/* Make the visible links a flex container */
+/* Keep table layout but push all except first to right */
 .greedy-nav .visible-links {
-  display: flex;
-  justify-content: space-between; /* name left, rest right */
-  align-items: center;
-  flex-wrap: wrap; /* allow wrapping on small screens */
+  display: table;          /* keep table layout for greedy nav JS */
+  width: 100%;
 }
 
-/* Keep the first link (your name) on the left */
 .greedy-nav .visible-links li:first-child {
-  margin-left: 0 !important;
+  float: left;             /* your name stays left */
 }
 
-/* Push all other nav items to the right */
 .greedy-nav .visible-links li:not(:first-child) {
-  margin-left: auto;
-}
-
-/* Keep light/dark mode button visible on right */
-#theme-toggle {
-  margin-left: 1rem; /* optional spacing */
-  display: flex !important;
-}
-
-/* Mobile: let the hidden-links menu work normally */
-@media (max-width: 768px) {
-  .greedy-nav .visible-links {
-    display: block;
-  }
-  .greedy-nav .visible-links li {
-    margin-left: 0 !important;
-  }
+  float: right;            /* everything else flush right */
 }
