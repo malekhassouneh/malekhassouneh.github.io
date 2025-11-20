@@ -1,0 +1,16 @@
+.navbar-brand {
+  margin-right: auto;
+}
+
+nav#navbar-main > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}

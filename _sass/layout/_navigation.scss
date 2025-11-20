@@ -442,30 +442,3 @@
     }
   }
 }
-
-/* Disable GreedyNav collapsing */
-.greedy-nav .hidden-links {
-  display: none !important;
-}
-
-.greedy-nav button {
-  display: none !important;  /* hide the "more" button */
-}
-
-/* Always show all nav items on one line */
-.greedy-nav .visible-links {
-  display: table !important;
-  width: 100% !important;
-}
-
-/* First item stays left */
-.greedy-nav .visible-links li:first-child {
-  text-align: left;
-}
-
-/* All other items right-aligned */
-.greedy-nav .visible-links li:not(:first-child) {
-  text-align: right;
-  width: 1%;
-  white-space: nowrap;
-}
