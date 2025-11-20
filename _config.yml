@@ -38,7 +38,7 @@ author:
   googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/0009-0007-3237-1542" # "https://orcid.org/yourorcidurl"
+  # orcid            : "https://orcid.org/0009-0007-3237-1542" # "https://orcid.org/yourorcidurl"
   semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
@@ -63,6 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
+  orcid            : "https://orcid.org/0009-0007-3237-1542" # "https://orcid.org/yourorcidurl"
   linkedin         : "malekhassouneh" # Username
   mastodon         : # URL
   medium           : # URL
