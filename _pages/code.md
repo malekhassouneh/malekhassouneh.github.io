@@ -9,8 +9,7 @@ redirect_from:
 
 Just a bunch of code that I've written over the years for various purposes. Check out my GitHub page for a list of all repositories!
 
-Tutorials
-------
+## Tutorials
 
 Here are some coding tutorial materials prepared as a graduate teaching assistant:
 

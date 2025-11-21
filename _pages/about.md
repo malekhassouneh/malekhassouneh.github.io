@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! This is my personal webpage where I (attempt to) document some interesting projects that I'm working on.
+Hello! This is my personal website where I (attempt to) document some interesting projects that I'm working on.
 
 I spend most of my time reading cool papers in econometric theory, but I'm also interested in many of the subtopics of labor and public economics (migration, tax competition, inequality, etc.) and pretty much anything with a spatial dimension.
 
