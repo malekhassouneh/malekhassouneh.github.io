@@ -7,9 +7,9 @@ redirect_from:
   - /resume
 ---
 
-<!-- <embed src = "/files/curriculumvitae_hassouneh.pdf" width = "600" height = "700" type = "application/pdf"> -->
+<embed src = "/files/curriculumvitae_hassouneh.pdf" width = "800" height = "600" type = "application/pdf"> 
 
-<a href = "/files/curriculumvitae_hassouneh.pdf" target = "_blank" > Download CV (PDF) </a>
+<!-- <a href = "/files/curriculumvitae_hassouneh.pdf" target = "_blank" > Download CV (PDF) </a> -->
 
 <!-- {% include base_path %}
 
