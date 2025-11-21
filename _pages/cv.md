@@ -1,13 +1,14 @@
 ---
 layout: archive
-title: "CV"
-permalink: /cv/
+title: "Curriculum Vitae"
+permalink: /curriculum-vitae/
 author_profile: true
 redirect_from:
   - /resume
+  - /cv
 ---
 
-<embed src = "/files/curriculumvitae_hassouneh.pdf" width = "800" height = "600" type = "application/pdf"> 
+<embed src = "/files/curriculumvitae_hassouneh.pdf" width = "900" height = "900" type = "application/pdf"> 
 
 <!-- <a href = "/files/curriculumvitae_hassouneh.pdf" target = "_blank" > Download CV (PDF) </a> -->
 

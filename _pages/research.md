@@ -22,4 +22,4 @@ Here are some research projects that I contributed to as a research assistant:
 
 Working Papers
 ------
-*Crickets chirping, tumbleweed rolls by* ... come back later!
+*Crickets chirping, tumbleweed rolls by*... come back later!
